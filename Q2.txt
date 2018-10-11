@@ -1,0 +1,7 @@
+﻿Q2-1 
+1. precision是focus在true postitive，當你的model答案全猜true，而true label又極高於false label，那就會導致precision分數很高，而事實上model是很差的，因此才需要用f1-score將false postive也當作評分標準。
+2. 因為單純使用0和1的話，對於類神經的學習就會少了比較多資訊量，因此不使用0和1
+3. bias 是指model的準確率大小, variance是指model受到noise所影響的程度
+4. 因為random forest的每個tree都是使用隨機的特徵且很強，而彼此沒有關聯幸，因此不需prune
+5. one-hot encoding是指將list或column中的uniqle element獨立出來成新的column，並在資料有出現的uniqle element上的column填上1的值。Ex, column1_data = [‘a’,’b’,’c’] -> new_columns_data = [[1,0,0], [0,1,0], [0,0,1]] 
+6.
